@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trackyboii/NavBar.dart';
 
 class MarkAttendancePage extends StatefulWidget {
   @override
@@ -8,6 +9,11 @@ class MarkAttendancePage extends StatefulWidget {
 class _MarkAttendancePageState extends State<MarkAttendancePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Mark Attendance'),
+      ),
+      bottomNavigationBar: NavBar(),
+    );
   }
 }
